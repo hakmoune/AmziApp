@@ -1,5 +1,5 @@
 const Journal = () => {
-  return <div>Journal</div>;
+  return <></>;
 };
 
 export default Journal;
