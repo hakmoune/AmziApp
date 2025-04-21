@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   UserRound,
   Bell,
@@ -85,14 +86,17 @@ const RootLayout = () => {
             <Bell className="w-5 h-5 text-gray-700" />
           </a>
           <div className="flex items-center gap-1.5">
-            <img className="w-8 h-8" src="women-avatar.png" alt="User Avatar" />
+            <Avatar>
+              <AvatarImage src="women-avatar.png" alt="User avatar" />
+              <AvatarFallback>U</AvatarFallback>
+            </Avatar>
             <p className="text-sm font-bold">A.Oumaima</p>
           </div>
         </div>
       </nav>
 
       <main className="px-8 py-3 bg-gray-100/30">
-        <div className="bg-white border border-gray-200 rounded-sm shadow-xs min-h-[84vh]">
+        <div className="bg-white border border-gray-200 rounded-sm shadow-xs min-h-[82vh]">
           <Outlet />
         </div>
       </main>

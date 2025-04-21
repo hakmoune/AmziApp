@@ -1,7 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import RootLayout from "./layouts/RootLayout";
 import Journal from "./pages/Journal";
-import "./App.css";
 
 function App() {
   return (
