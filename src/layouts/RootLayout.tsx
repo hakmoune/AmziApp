@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   UserRound,
@@ -11,80 +11,197 @@ import {
   ClipboardPen,
   Users,
   BookText,
+  ChevronRight,
 } from "lucide-react";
 
 const RootLayout = () => {
   return (
     <>
-      <nav className="flex justify-between items-center px-8 py-6 border-b border-gray-200 shadow-xs">
+      <nav className="flex justify-between items-center px-8 py-3 border-b border-gray-200 shadow-xs">
         <div>
-          <a href="/" className="font-bold flex items-center gap-1">
+          <Link to="/" className="font-bold flex items-center gap-1">
             <Album />
-            Alpha App.
-          </a>
+            Alpha/App.
+          </Link>
         </div>
 
-        <ul className="flex gap-5 text-sm">
-          <li>
-            <a href="/journal" className="active flex items-center gap-1">
-              <BookText />
+        <ul className="flex gap-0.5 text-sm ">
+          <li className="hover:bg-gray-100 p-2 rounded-xl active">
+            <Link to="/journal" className="active flex items-center gap-1">
+              <BookText className="w-5" />
               Journal
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="/comptes" className="flex items-center gap-1">
-              <UserRound />
+          <li className="hover:bg-gray-100 p-2 rounded-xl">
+            <Link to="/comptes" className="flex items-center gap-1">
+              <UserRound className="w-5" />
               Comptes
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="/articles" className="flex items-center gap-1">
-              <Box />
+          <li className="hover:bg-gray-100 p-2 rounded-xl">
+            <Link to="/articles" className="flex items-center gap-1">
+              <Box className="w-5" />
               Articles
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="/operation-client" className="flex items-center gap-1">
-              <BriefcaseBusiness />
-              Opér Client
-            </a>
+          <li className="relative group hover:bg-gray-100 p-2 rounded-xl">
+            <div className="flex items-center gap-1 cursor-pointer">
+              <BriefcaseBusiness className="w-5" />
+              Opération Client
+              <ChevronRight className="w-4" />
+            </div>
+            <ul className="absolute left-0 top-full hidden group-hover:block bg-white border rounded-md shadow-lg z-10">
+              <li className="border-b">
+                <Link
+                  to="/operation-client"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Devis
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Bon de Commande
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Bon de livraison
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Facture
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Retour
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Réglement
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Impayé
+                </Link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a
-              href="/operation-fournisseur"
-              className="flex items-center gap-1"
-            >
-              <Briefcase />
-              Opér Fournisseur
-            </a>
+
+          <li className="relative group hover:bg-gray-100 p-2 rounded-xl">
+            <div className="flex items-center gap-1 cursor-pointer">
+              <Briefcase className="w-5" />
+              Opération Fournisseur
+              <ChevronRight className="w-4" />
+            </div>
+            <ul className="absolute left-0 top-full hidden group-hover:block bg-white border rounded-md shadow-lg z-10">
+              <li className="border-b">
+                <Link
+                  to="/operation-client"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Devis
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Bon de Commande
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Bon de livraison
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Facture
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Retour
+                </Link>
+              </li>
+              <li className="border-b">
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Réglement
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/operation-fournisseur"
+                  className="block px-4 py-1.5 hover:bg-gray-100"
+                >
+                  Impayé
+                </Link>
+              </li>
+            </ul>
           </li>
-          <li>
-            <a href="/tresorerie" className="flex items-center gap-1">
-              <Landmark />
+          <li className="hover:bg-gray-100 p-2 rounded-xl">
+            <Link to="/tresorerie" className="flex items-center gap-1">
+              <Landmark className="w-5" />
               Trésorerie
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="/frais" className="flex items-center gap-1">
-              <ClipboardPen />
+          <li className="hover:bg-gray-100 p-2 rounded-xl">
+            <Link to="/frais" className="flex items-center gap-1">
+              <ClipboardPen className="w-5" />
               Frais
-            </a>
+            </Link>
           </li>
-          <li>
-            <a href="/commerciaux" className="flex items-center gap-1">
-              <Users />
+          <li className="hover:bg-gray-100 p-2 rounded-xl">
+            <Link to="/commerciaux" className="flex items-center gap-1">
+              <Users className="w-5" />
               Commerciaux
-            </a>
+            </Link>
           </li>
         </ul>
 
         <div className="relative flex items-center gap-4">
-          <a href="">
+          <Link to="">
             <span className="absolute top-0 left-2 flex items-center justify-center text-white text-xs font-bold bg-red-500 rounded-full w-4 h-4">
               4
             </span>
             <Bell className="w-5 h-5 text-gray-700" />
-          </a>
+          </Link>
           <div className="flex items-center gap-1.5">
             <Avatar>
               <AvatarImage src="women-avatar.png" alt="User avatar" />
@@ -95,10 +212,8 @@ const RootLayout = () => {
         </div>
       </nav>
 
-      <main className="px-8 py-3 bg-gray-100/30">
-        <div className="bg-white border border-gray-200 rounded-sm shadow-xs min-h-[82vh]">
-          <Outlet />
-        </div>
+      <main className="px-8 py-3 bg-gray-100/30 min-h-[82vh]">
+        <Outlet />
       </main>
     </>
   );

@@ -125,3 +125,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/*---Custom---*/
+.active {
+  @apply bg-gray-100;
+}
