@@ -13,16 +13,20 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
+import { Input } from "@/components/ui/input";
 
 const Journal = () => {
   return (
     <>
       <Card>
         <CardHeader>
-          <CardTitle>Journal</CardTitle>
-          <CardDescription>Hello Word!</CardDescription>
+          <CardTitle>Journal.</CardTitle>
+          {/* <CardDescription>Hello Word!</CardDescription> */}
         </CardHeader>
-        <CardContent>
+        <CardContent className="flex flex-col gap-4">
+          <div>
+            <Input type="text" placeholder="Recherech..." />
+          </div>
           <div className="rounded-lg border">
             <Table>
               <TableHeader className="bg-gray-100/30">
