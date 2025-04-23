@@ -212,7 +212,7 @@ const RootLayout = () => {
         </div>
       </nav>
 
-      <main className="px-8 py-3 bg-gray-100/30 min-h-[82vh]">
+      <main className="px-4 py-4 bg-gray-100/30 min-h-[82vh]">
         <Outlet />
       </main>
     </>
