@@ -25,7 +25,7 @@ const RootLayout = () => {
           </Link>
         </div>
 
-        <ul className="flex gap-0.5 text-sm ">
+        <ul className="flex gap-2 text-sm ">
           <li className="hover:bg-gray-100 p-2 rounded-xl active">
             <Link to="/journal" className="active flex items-center gap-1">
               <BookText className="w-5" />
