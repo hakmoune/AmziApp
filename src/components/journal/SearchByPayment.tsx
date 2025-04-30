@@ -27,7 +27,7 @@ const options: Option[] = [
   { label: "Employé", value: "employe" },
 ];
 
-export default function MultiSelect() {
+const SearchByPayment = () => {
   const [selected, setSelected] = useState<Option[]>([]);
   const [open, setOpen] = useState(false);
 
@@ -106,4 +106,6 @@ export default function MultiSelect() {
       </PopoverContent>
     </Popover>
   );
-}
+};
+
+export default SearchByPayment;
