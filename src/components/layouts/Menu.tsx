@@ -62,6 +62,7 @@ const Menu = () => {
             className={`p-2 rounded-xl hover:bg-gray-100 ${
               isActive ? "active" : ""
             } ${subItems ? "relative group" : ""}`}
+            aria-current={isActive ? "page" : undefined}
           >
             {subItems ? (
               <>
