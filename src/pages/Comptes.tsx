@@ -7,6 +7,7 @@ import SearchByComercial from "@/components/comptes/SearchByComercial";
 import SearchByCompteName from "@/components/comptes/SearchByCompteName";
 import ShareComptes from "@/components/comptes/ShareComptes";
 import AddCompte from "@/components/comptes/AddCompte";
+import SearchByInputText from "@/components/comptes/SearchByInputText";
 
 const Comptes = () => {
   const [compte, setCompte] = useState<string>("clients");
@@ -35,6 +36,7 @@ const Comptes = () => {
             <div className="flex gap-4">
               <SearchByCompteName />
               <SearchByComercial />
+              <SearchByInputText />
             </div>
 
             <ComptesTable />
