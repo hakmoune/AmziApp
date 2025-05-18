@@ -2,6 +2,7 @@ import {
   Table,
   TableBody,
   TableCell,
+  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -85,6 +86,14 @@ const JournalTable = () => {
               </ContextMenuContent>
             </ContextMenu>
           </TableBody>
+          <TableFooter>
+            <TableRow>
+              <TableCell colSpan={5}>Solde débiteur : 2 536,00</TableCell>
+              <TableCell className="text-center">0,00</TableCell>
+              <TableCell className="text-center">2 536,00</TableCell>
+              <TableCell colSpan={3}></TableCell>
+            </TableRow>
+          </TableFooter>
         </Table>
       </div>
 

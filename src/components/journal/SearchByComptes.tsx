@@ -19,24 +19,16 @@ import {
 
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "tous",
+    label: "Tous*",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "clients",
+    label: "Clients",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
-  },
-  {
-    value: "remix",
-    label: "Remix",
-  },
-  {
-    value: "astro",
-    label: "Astro",
+    value: "fournisseur",
+    label: "Fournisseur",
   },
 ];
 
@@ -55,7 +47,7 @@ const SearchByComptes = () => {
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select comptes..."}
+            : "Sélect un compte"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>

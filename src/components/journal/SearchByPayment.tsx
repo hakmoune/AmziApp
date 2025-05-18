@@ -21,10 +21,10 @@ type Option = {
 };
 
 const options: Option[] = [
-  { label: "Client", value: "client" },
-  { label: "Fournisseur", value: "fournisseur" },
-  { label: "Partenaire", value: "partenaire" },
-  { label: "Employé", value: "employe" },
+  { label: "Chèque", value: "Chèque" },
+  { label: "Effet", value: "Effet" },
+  { label: "Espèce", value: "Espèce" },
+  { label: "TPE", value: "TPE" },
 ];
 
 const SearchByPayment = () => {
@@ -52,7 +52,7 @@ const SearchByPayment = () => {
           className="min-w-[250px] justify-start flex-wrap gap-2"
         >
           {selected.length === 0 ? (
-            <span className="text-gray-500">Opération clients...</span>
+            <span className="text-gray-500">Mode de paiement...</span>
           ) : (
             selected.map((item) => (
               <Badge

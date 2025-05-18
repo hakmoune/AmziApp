@@ -21,10 +21,13 @@ type Option = {
 };
 
 const options: Option[] = [
-  { label: "Client", value: "client" },
-  { label: "Fournisseur", value: "fournisseur" },
-  { label: "Partenaire", value: "partenaire" },
-  { label: "Employé", value: "employe" },
+  { label: "Devis", value: "devis" },
+  { label: "B.C", value: "bon-commande" },
+  { label: "B.L", value: "bon-livraison" },
+  { label: "Fact", value: "facture" },
+  { label: "Retour", value: "retour" },
+  { label: "Régl", value: "réglement" },
+  { label: "Imp", value: "impayé" },
 ];
 
 const SearchByOperations = () => {
@@ -52,12 +55,12 @@ const SearchByOperations = () => {
           className="min-w-[250px] justify-start flex-wrap gap-2"
         >
           {selected.length === 0 ? (
-            <span className="text-gray-500">Opération clients...</span>
+            <span className="text-gray-500">Opérations...</span>
           ) : (
             selected.map((item) => (
               <Badge
                 key={item.value}
-                className="flex gap-1 items-center"
+                className="flex gap-0.5 items-center"
                 variant="secondary"
               >
                 <span
@@ -65,7 +68,7 @@ const SearchByOperations = () => {
                     e.stopPropagation();
                     removeOption(item.value);
                   }}
-                  className="rounded-sm hover:bg-muted px-0.5 cursor-pointer"
+                  className="rounded-sm hover:bg-muted px-1 cursor-pointer"
                 >
                   <X className="h-3 w-3" />
                 </span>
