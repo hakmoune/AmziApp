@@ -18,7 +18,7 @@ const items = [
   {
     label: "Opération Client",
     icon: BriefcaseBusiness,
-    basePath: "opération-client",
+    basePath: "operation-client",
     subItems: [
       "Devis",
       "Bon de Commande",
@@ -32,7 +32,7 @@ const items = [
   {
     label: "Opération Fournisseur",
     icon: Briefcase,
-    basePath: "opération-fournisseur",
+    basePath: "operation-fournisseur",
     subItems: [
       "Bon de Commande",
       "Bon de livraison",
@@ -42,7 +42,7 @@ const items = [
       "Impayé",
     ],
   },
-  { label: "Trésorerie", icon: Landmark, basePath: "trésorerie" },
+  { label: "Trésorerie", icon: Landmark, basePath: "tresorerie" },
   { label: "Frais", icon: ClipboardPen, basePath: "frais" },
   { label: "Commerciaux", icon: Users, basePath: "commerciaux" },
 ];

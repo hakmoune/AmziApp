@@ -3,6 +3,9 @@ import RootLayout from "./components/layouts/RootLayout";
 import Journal from "./pages/Journal";
 import Comptes from "./pages/Comptes";
 import Articles from "./pages/Articles";
+import Tresorerie from "./pages/Tresorerie";
+import Frais from "./pages/Frais";
+import Commerciaux from "./pages/Commerciaux";
 
 function App() {
   return (
@@ -13,6 +16,9 @@ function App() {
           <Route path="/journal" element={<Journal />} />
           <Route path="/comptes" element={<Comptes />} />
           <Route path="/articles" element={<Articles />} />
+          <Route path="/tresorerie" element={<Tresorerie />} />
+          <Route path="/frais" element={<Frais />} />
+          <Route path="/commerciaux" element={<Commerciaux />} />
         </Route>
       </Routes>
     </BrowserRouter>
