@@ -23,7 +23,7 @@ const ComptesTable = () => {
         <Table>
           <TableHeader className="bg-gray-100/30">
             <TableRow>
-              <TableHead className="w-[100px]">Compte</TableHead>
+              <TableHead>Compte</TableHead>
               <TableHead>Solde</TableHead>
               <TableHead>Téléphone</TableHead>
               <TableHead>Ville</TableHead>

@@ -25,7 +25,7 @@ const JournalTable = () => {
         <Table>
           <TableHeader className="bg-gray-100/30">
             <TableRow>
-              <TableHead className="w-[100px]">Date</TableHead>
+              <TableHead>Date</TableHead>
               <TableHead>Opération</TableHead>
               <TableHead>N° bon</TableHead>
               <TableHead>Compte</TableHead>
@@ -41,9 +41,7 @@ const JournalTable = () => {
             <ContextMenu>
               <ContextMenuTrigger asChild>
                 <TableRow>
-                  <TableCell className="font-medium">
-                    20/02/2025 16:50:31
-                  </TableCell>
+                  <TableCell>20/02/2025 16:50:31</TableCell>
                   <TableCell>Réglement Client</TableCell>
                   <TableCell>1235689</TableCell>
                   <TableCell> Frs - Mohamed Amzi</TableCell>

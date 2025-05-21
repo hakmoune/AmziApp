@@ -19,24 +19,20 @@ import {
 
 const frameworks = [
   {
-    value: "next.js",
-    label: "Next.js",
+    value: "Tous les articles",
+    label: "Tous les articles",
   },
   {
-    value: "sveltekit",
-    label: "SvelteKit",
+    value: "Articles en stock",
+    label: "Articles en stock",
   },
   {
-    value: "nuxt.js",
-    label: "Nuxt.js",
+    value: "Stock négatif",
+    label: "Stock négatif",
   },
   {
-    value: "remix",
-    label: "Remix",
-  },
-  {
-    value: "astro",
-    label: "Astro",
+    value: "Stock zéro",
+    label: "Stock zéro",
   },
 ];
 
@@ -55,7 +51,7 @@ const FilterByStock = () => {
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "Select comptes..."}
+            : "Filtrer par stock"}
           <ChevronsUpDown className="opacity-50" />
         </Button>
       </PopoverTrigger>
