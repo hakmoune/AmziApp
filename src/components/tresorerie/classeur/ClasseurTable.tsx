@@ -4,7 +4,6 @@ import {
   ContextMenuItem,
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
-import { DropdownMenuSeparator } from "@/components/ui/dropdown-menu";
 import {
   Table,
   TableBody,
@@ -13,14 +12,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  CircleArrowDown,
-  CircleArrowUp,
-  Copy,
-  Eye,
-  File,
-  Trash2,
-} from "lucide-react";
+import { CircleArrowDown, CircleArrowUp, Copy } from "lucide-react";
 import PaginationTable from "./PaginationTable";
 import { Badge } from "@/components/ui/badge";
 
