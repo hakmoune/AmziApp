@@ -31,11 +31,11 @@ const Tresorerie = () => {
             <Classeur />
           </TabsContent>
 
-          <TabsContent value="banque">
+          <TabsContent value="banque" className="mt-1.5">
             <Banque />
           </TabsContent>
 
-          <TabsContent value="impayés">
+          <TabsContent value="impayés" className="mt-1.5">
             <Impayés />
           </TabsContent>
         </Tabs>
