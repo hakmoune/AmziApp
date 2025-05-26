@@ -1,4 +1,5 @@
 import BanqueTable from "./BanqueTable";
+import SearchByComptBank from "./SearchByComptBank";
 import SearchByCompte from "./SearchByCompte";
 import SearchByDateEch from "./SearchByDateEch";
 import SearchByDateOper from "./SearchByDateOper";
@@ -18,6 +19,7 @@ const Banque = () => {
         <SearchByCompte />
         <SearchByProprio />
         <SearchByDateOper />
+        <SearchByComptBank />
       </div>
 
       <BanqueTable />

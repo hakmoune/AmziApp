@@ -1,5 +1,30 @@
+import ImpayésTable from "./ImpayésTable";
+import SearchByComptBank from "./SearchByComptBank";
+import SearchByCompte from "./SearchByCompte";
+import SearchByDateEch from "./SearchByDateEch";
+import SearchByDateOper from "./SearchByDateOper";
+import SearchByInputText from "./SearchByInputText";
+import SearchByProprio from "./SearchByProprio";
+import SearchByType from "./SearchByType";
+
 const Impayés = () => {
-  return <div>Impayés</div>;
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="flex gap-4">
+        <SearchByDateEch />
+        <SearchByInputText />
+        <SearchByType />
+      </div>
+      <div className="flex gap-4">
+        <SearchByCompte />
+        <SearchByProprio />
+        <SearchByDateOper />
+        <SearchByComptBank />
+      </div>
+
+      <ImpayésTable />
+    </div>
+  );
 };
 
 export default Impayés;

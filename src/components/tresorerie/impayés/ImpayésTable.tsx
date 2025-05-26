@@ -13,11 +13,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { CircleArrowDown, CircleArrowUp, Copy } from "lucide-react";
+import { CircleArrowDown, CircleArrowUp, Copy, Redo2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import PaginationTable from "./PaginationTable";
 
-const BanqueTable = () => {
+const ImpayésTable = () => {
   return (
     <>
       <div className="rounded-lg border">
@@ -26,8 +26,8 @@ const BanqueTable = () => {
             <TableRow>
               <TableHead>N°bon</TableHead>
               <TableHead>Date depot</TableHead>
-              <TableHead>N° Chéq/effet</TableHead>
               <TableHead>Date d'échéance</TableHead>
+              <TableHead>N° Chéq/effet</TableHead>
               <TableHead>Type</TableHead>
               <TableHead>Libelle</TableHead>
               <TableHead>Débit</TableHead>
@@ -43,16 +43,17 @@ const BanqueTable = () => {
                 <TableRow>
                   <TableCell>152348</TableCell>
                   <TableCell>20/12/2024</TableCell>
-                  <TableCell>12536</TableCell>
                   <TableCell>20/12/2024</TableCell>
+                  <TableCell>12536</TableCell>
                   <TableCell>
                     <Badge variant={"secondary"}>Societé</Badge>
                   </TableCell>
                   <TableCell>
-                    Chèque : Dépot effet N° 12536 Compte banque societé
+                    Chèque impayé : N° 12536, Compte banque : societé, Raison :
+                    non valide
                   </TableCell>
-                  <TableCell>1 5228,00</TableCell>
                   <TableCell></TableCell>
+                  <TableCell>1 5228,00</TableCell>
                   <TableCell>ASALAM MENARA</TableCell>
                   <TableCell>AMZI STE</TableCell>
                   <TableCell>Oiumaima le 21/23/2025 12:20:00</TableCell>
@@ -61,12 +62,16 @@ const BanqueTable = () => {
 
               <ContextMenuContent>
                 <ContextMenuItem>
-                  <CircleArrowDown />
-                  Déclarer impayé
+                  <Redo2 />
+                  Relancer le client
                 </ContextMenuItem>
                 <ContextMenuItem>
                   <CircleArrowUp />
-                  Annuler
+                  Dépôt banque
+                </ContextMenuItem>
+                <ContextMenuItem>
+                  <CircleArrowDown />
+                  Signaler comme litige
                 </ContextMenuItem>
                 <ContextMenuItem>
                   <Copy />
@@ -78,8 +83,8 @@ const BanqueTable = () => {
           <TableFooter>
             <TableRow>
               <TableCell colSpan={6}></TableCell>
-              <TableCell className="text-center">1 5228,00</TableCell>
               <TableCell className="text-center">0,00</TableCell>
+              <TableCell className="text-center">1 5228,00</TableCell>
               <TableCell colSpan={4}></TableCell>
             </TableRow>
           </TableFooter>
@@ -91,4 +96,4 @@ const BanqueTable = () => {
   );
 };
 
-export default BanqueTable;
+export default ImpayésTable;
