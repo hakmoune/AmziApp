@@ -33,6 +33,7 @@ const JournalTable = () => {
               <TableHead>Debit</TableHead>
               <TableHead>Credit</TableHead>
               <TableHead>État</TableHead>
+              <TableHead>Commercial</TableHead>
               <TableHead>Saisie par</TableHead>
               <TableHead>Modier par</TableHead>
             </TableRow>
@@ -54,6 +55,7 @@ const JournalTable = () => {
                   <TableCell>
                     <Badge variant="secondary">En cours</Badge>
                   </TableCell>
+                  <TableCell>Said MESKINE</TableCell>
                   <TableCell>Oumaima le 12/25/2025 12:58:12</TableCell>
                   <TableCell>Amine le 12/25/2025 12:58:12</TableCell>
                 </TableRow>
@@ -89,7 +91,7 @@ const JournalTable = () => {
               <TableCell colSpan={5}>Solde débiteur : 2 536,00</TableCell>
               <TableCell className="text-center">0,00</TableCell>
               <TableCell className="text-center">2 536,00</TableCell>
-              <TableCell colSpan={3}></TableCell>
+              <TableCell colSpan={4}></TableCell>
             </TableRow>
           </TableFooter>
         </Table>

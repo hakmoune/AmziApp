@@ -8,6 +8,7 @@ import SearchByOperations from "@/components/journal/SearchByOperations";
 import SearchByCompteName from "@/components/journal/SearchByCompteName";
 import JournalTable from "@/components/journal/JournalTable";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import SearchByComercial from "@/components/journal/SearchByComercial";
 
 const Journal = () => {
   return (
@@ -21,6 +22,7 @@ const Journal = () => {
           <div className="flex gap-4">
             <SearchByDate />
             <SearchByInputText />
+            <SearchByComercial />
           </div>
 
           <div className="flex gap-4">

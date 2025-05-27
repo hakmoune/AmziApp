@@ -28,11 +28,11 @@ const BanqueTable = () => {
               <TableHead>Date depot</TableHead>
               <TableHead>N° Chéq/effet</TableHead>
               <TableHead>Date d'échéance</TableHead>
-              <TableHead>Type</TableHead>
+              <TableHead>Compte</TableHead>
               <TableHead>Libelle</TableHead>
               <TableHead>Débit</TableHead>
               <TableHead>Credit</TableHead>
-              <TableHead>Compte</TableHead>
+              <TableHead>Client</TableHead>
               <TableHead>Propriétaire</TableHead>
               <TableHead>Saisie par</TableHead>
             </TableRow>

@@ -24,10 +24,11 @@ const options: Option[] = [
   { label: "Devis", value: "devis" },
   { label: "B.C", value: "bon-commande" },
   { label: "B.L", value: "bon-livraison" },
-  { label: "Fact", value: "facture" },
   { label: "Retour", value: "retour" },
   { label: "Régl", value: "réglement" },
   { label: "Imp", value: "impayé" },
+  { label: "Fact", value: "facture" },
+  { label: "Frais", value: "frais" },
 ];
 
 const SearchByOperations = () => {

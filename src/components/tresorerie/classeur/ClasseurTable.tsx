@@ -28,12 +28,13 @@ const ClasseurTable = () => {
               <TableHead>Type</TableHead>
               <TableHead>N° Chéq/effet</TableHead>
               <TableHead>Banque</TableHead>
-              <TableHead>Compte</TableHead>
+              <TableHead>Client</TableHead>
               <TableHead>Propriétaire</TableHead>
               <TableHead>N° B.L</TableHead>
               <TableHead>N° Facture</TableHead>
               <TableHead>Libelle</TableHead>
               <TableHead>Date d'opération</TableHead>
+              <TableHead>Saisie par</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -56,6 +57,7 @@ const ClasseurTable = () => {
                     29/06/2022
                   </TableCell>
                   <TableCell>12/25/2025</TableCell>
+                  <TableCell>Oumaima le 12/25/2025 12:31:00</TableCell>
                 </TableRow>
               </ContextMenuTrigger>
 
