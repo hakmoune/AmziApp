@@ -9,6 +9,8 @@ import SearchByCompteName from "@/components/journal/SearchByCompteName";
 import JournalTable from "@/components/journal/JournalTable";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import SearchByComercial from "@/components/journal/SearchByComercial";
+import OperationsClient from "@/components/journal/OperationsClient";
+import OperationsFournisseur from "@/components/journal/OperationsFournisseur";
 
 const Journal = () => {
   return (
@@ -19,23 +21,31 @@ const Journal = () => {
 
       <CardContent className="flex flex-col gap-4">
         <div className="flex justify-between">
-          <div className="flex gap-4">
-            <SearchByDate />
-            <SearchByInputText />
-            <SearchByComercial />
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-4">
+              <SearchByDate />
+              <SearchByInputText />
+              <SearchByOperations />
+            </div>
+            <div className="flex gap-4">
+              <SearchByComptes />
+              <SearchByCompteName />
+              <SearchByComercial />
+              <SearchByPayment />
+            </div>
           </div>
 
-          <div className="flex gap-4">
-            <PrintJournal />
-            <ShareJournal />
+          <div className="flex flex-col items-end gap-4">
+            <div className="flex gap-4">
+              <PrintJournal />
+              <ShareJournal />
+            </div>
+            <div className="flex gap-4">
+              <OperationsClient />
+              <OperationsFournisseur />
+              <ShareJournal />
+            </div>
           </div>
-        </div>
-
-        <div className="flex gap-4">
-          <SearchByOperations />
-          <SearchByComptes />
-          <SearchByCompteName />
-          <SearchByPayment />
         </div>
 
         <JournalTable />

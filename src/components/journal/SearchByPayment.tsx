@@ -21,7 +21,7 @@ type Option = {
 };
 
 const options: Option[] = [
-  { label: "Chèque", value: "Chèque" },
+  { label: "Chèq", value: "Chèque" },
   { label: "Effet", value: "Effet" },
   { label: "Espèce", value: "Espèce" },
   { label: "TPE", value: "TPE" },

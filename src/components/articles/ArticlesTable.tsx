@@ -28,7 +28,9 @@ const ArticlesTable = () => {
               <TableHead>Stock</TableHead>
               <TableHead>Unité</TableHead>
               <TableHead>Prix achat</TableHead>
-              <TableHead>Prix vente</TableHead>
+              <TableHead>Prix vente A</TableHead>
+              <TableHead>Prix vente B</TableHead>
+              <TableHead>Prix vente C</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -41,6 +43,8 @@ const ArticlesTable = () => {
                   <TableCell>3</TableCell>
                   <TableCell>12.00</TableCell>
                   <TableCell>17.00</TableCell>
+                  <TableCell>19.00</TableCell>
+                  <TableCell>21.00</TableCell>
                 </TableRow>
               </ContextMenuTrigger>
 
@@ -51,7 +55,7 @@ const ArticlesTable = () => {
                 </ContextMenuItem>
                 <ContextMenuItem>
                   <File />
-                  SItuation
+                  Fiche
                 </ContextMenuItem>
                 <ContextMenuItem>
                   <Copy />
